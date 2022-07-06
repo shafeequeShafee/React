@@ -5,6 +5,7 @@
 
 
 import { NavLink } from "react-router-dom"
+import { useAuth } from "./auth"
 // ath active aavumbol athinnu oru class kittum {active} inspect cheytha mathii, athinnu index.css sil style kodukkaa
 const Navbar = () => {
   const navLinkStyles = ({isActive}) =>{
@@ -14,6 +15,7 @@ const Navbar = () => {
         color: isActive ? 'white': 'blue'
       }
   }
+  const auth = useAuth()
     
     return (
         <nav className="primary-nav">
@@ -23,6 +25,13 @@ const Navbar = () => {
           <NavLink style={navLinkStyles} to='/'>Home</NavLink>
           <NavLink style={navLinkStyles}  to='/about'>About</NavLink>
           <NavLink style={navLinkStyles}  to='/products'>Products</NavLink>
+          <NavLink style={navLinkStyles}  to='/Users'>Users</NavLink>
+          <NavLink style={navLinkStyles}  to='/login'>Login</NavLink>
+          <NavLink style={navLinkStyles}  to='/profile'>Profile</NavLink>
+          <NavLink style={navLinkStyles}  to='/hooks'>ReactHooks</NavLink>
+          {
+            !auth.user && (<NavLink style={navLinkStyles}  to='/loginauth'>LoginAuth</NavLink>)
+          }
         </nav>
     )
 }
