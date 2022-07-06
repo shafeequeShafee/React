@@ -1,6 +1,50 @@
+extension:  ES7+ React/Redux/React-Native snippets
+
 Hooks
 ---------
 Hooks are a new feature addition in React version 16.8 which allow you to use React features without having to write a class.
 
 ex. State of component
 Hooks don't work inside classes
+Avoid the whole confusion with 'this' keyword
+Allow you to reuse stateful logic.
+Organize the logic inside a component into reusable isolated units
+
+
+Rules of Hooks
+---------------
+1) Only call Hooks at the Top Level
+   Don't call Hooks inside loops,conditions, or nested functions
+2) Only call Hooks from React functions
+   call them from within React Functions components and not just any regular JavaScript function
+
+
+useState Hooks summary
+------------------------
+In classes, the state is always an object.
+
+with the useState hook , it can object , array, boolean, number, string etc...
+
+The  useState hook returns an array with 2 elements.
+
+The first element is the current value of the state, and the second element is a state setter function.
+
+New state value depends on the previous state value ? you can pass a function to the setter function.
+
+When dealing with objects or arrays, always make sure to spread your state variable and then call the setter function.
+
+
+useEffect Hooks summary
+-----------------------
+
+
+
+
+
+ES6 features
+------------
+
+Array distructuring
+ex.   const [count, setCount]
+
+spread operator ...object
