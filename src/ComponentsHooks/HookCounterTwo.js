@@ -4,14 +4,26 @@ import React ,{useState} from 'react'
 const HookCounterTwo = () => {
     const initialCount = 0
     const [count , setCount] = useState(initialCount)
+    console.log("count",count)
 
-    const incrementFive=()=>{
-        for(let i =0 ; i<5 ; i++){
-            // it is not working , because it acess to count value not previous value
-            // setCount(count + 1)
+    // const incrementFive=()=>{
+    //     for(let i =0 ; i<5 ; i++){
+    //         // it is not working , because it acess to count value not previous value
+    //         // setCount(count + 1)
 
-            setCount(prevCount => prevCount + 1)
+    //         setCount(prevCount => prevCount + 1)
+    //     }
+    // }
+    const increment=()=>{
+        const f1=()=>{
+           console.log("f1")
         }
+        const f2=()=>{
+            console.log("f2")
+        }
+        f1()
+        f2()
+        decrementFive()
     }
     const decrementFive=()=>{
         for(let i =0 ; i<5 ; i++){
@@ -26,7 +38,7 @@ const HookCounterTwo = () => {
     <button onClick={()=>setCount(count + 1)}>Increment</button>
     <button onClick={()=>setCount(count - 1)}>Decrement</button>
 
-    <button onClick={incrementFive}>Increament 5</button>
+    <button onClick={increment}>Increament 5</button>
     <button onClick={decrementFive}>decrement 5</button>
 
     </>

@@ -29,6 +29,7 @@ const Navbar = () => {
           <NavLink style={navLinkStyles}  to='/login'>Login</NavLink>
           <NavLink style={navLinkStyles}  to='/profile'>Profile</NavLink>
           <NavLink style={navLinkStyles}  to='/hooks'>ReactHooks</NavLink>
+          <NavLink style={navLinkStyles}  to='/order'>Filter</NavLink>
           {
             !auth.user && (<NavLink style={navLinkStyles}  to='/loginauth'>LoginAuth</NavLink>)
           }

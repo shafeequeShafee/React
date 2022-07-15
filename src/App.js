@@ -25,6 +25,8 @@ import { AuthProvider } from './RouterComponents/auth';
 import LoginAuth from './RouterComponents/LoginAuth';
 import RequireAuth from './RouterComponents/RequireAuth';
 import Hooks from './ComponentsHooks/Hooks';
+import FilterComponent from './Filter/FilterComponent';
+import Ordering from './Filter/Ordering';
 
 
 // for lazy loading
@@ -80,6 +82,8 @@ function App() {
             <Route path='profile' element={<RequireAuth><Profile /></RequireAuth>}></Route>
             <Route path='loginauth' element={<LoginAuth />}></Route>
             <Route path='hooks' element={<Hooks />}></Route>
+            <Route path='order/filter' element={<FilterComponent />}></Route>
+            <Route path='order' element={<Ordering />}></Route>
 
 
           </Routes>

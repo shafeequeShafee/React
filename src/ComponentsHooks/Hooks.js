@@ -1,3 +1,7 @@
+import ClassCounterOne from "./ClassCounterOne"
+import ClassCounterTwo from "./ClassCounterTwo"
+import EffectHooksOne from "./EffectHooksOne"
+import EffectHooksTwo from "./EffectHooksTwo"
 import HookCounter from "./HookCounter"
 import HookCounterFour from "./HookCounterFour"
 import HookCounterThree from "./HookCounterThree"
@@ -12,6 +16,10 @@ const Hooks = () => {
             <HookCounterTwo/>
             <HookCounterThree/>
             <HookCounterFour/>
+            <ClassCounterOne/>
+            <EffectHooksOne/>
+            <ClassCounterTwo/>
+            <EffectHooksTwo/>
             
         </div>
     )
