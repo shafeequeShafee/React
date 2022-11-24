@@ -5,6 +5,7 @@ import './App.css';
 /////////////////////////////  Routing /////
 
 import { Routes, Route } from 'react-router-dom'
+
 import Home from './RouterComponents/Home';
 import About from './RouterComponents/About';
 import Navbar from './RouterComponents/Navbar';

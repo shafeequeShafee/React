@@ -61,6 +61,7 @@ const Home = () => {
             <h1>Props</h1>
         <h5>################################################################################################</h5>
         {/* props */}
+        <h1> functional props</h1>
         <Greet name="sfq" nikename="gareembai" />
         <Greet name="Hiii" nikename="hiii" />
         <Greet name="mandu" nikename="akhila"> <button>Action</button></Greet>
@@ -98,7 +99,7 @@ const Home = () => {
         <ListRendering />
         <h1>Styling and CSS Basics</h1>
         <h5>################################################################################################</h5>
-        <Stylesheet primary={true} />
+        <Stylesheet primary={false} />
         <Inline />
         <h5 className='error'>Error</h5>
         <h5 className={styles.sucess}>Sucess</h5>

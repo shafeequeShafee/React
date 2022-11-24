@@ -50,3 +50,42 @@ Array distructuring
 ex.   const [count, setCount]
 
 spread operator ...object
+
+
+//////////////////////////////////////
+
+initialisation
+---------------
+
+npx create-react-app my-app
+cd my-app
+npm start
+
+//rfc ---functional components
+//rcc --- class components
+
+Bootstrap
+--------------
+npm install bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+router
+--------------
+npm i react-router-dom
+
+
+/////// JSX //////
+javascript xml --- js ntae ulil html eyutham(allekil html ntae akath javascript eyuthaam)
+
+/////// JSON ////////
+JSON -javascript object Notation
+
+//// web service ////
+-- athil JSON kodukkunnu , edukkunnu
+-- Rest Api okkae oru web service aannu
+-- SOP
+
+
+#  Client side il annu rendering nadakkunnath
+# PWA - progressive web app-- web application just oru icon ittu dowload cheyunna pollae
