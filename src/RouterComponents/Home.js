@@ -184,6 +184,11 @@ const Home = () => {
         <PostForm/>
         <h4>React Router</h4>
         <h6>****************************</h6>
+
+        <h1>Redux in React JS</h1>
+      ################################################################################################
+      <h6>Redux is a predictabl state container for javascript apps</h6>
+      
             
         </div>
     )
